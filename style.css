@@ -145,9 +145,11 @@ h2 {
 }
 a {
   text-decoration: none;
-  color: #ffd0e5;
+  color: #ff85bc;
 }
-
+footer {
+  color: #ff85bc;
+}
 .text,
 .nav,
 .welcome,
@@ -176,6 +178,16 @@ a {
   box-shadow: 0.25rem 0.25rem;
   padding: 10px;
 }
+nav > .about-me,
+nav > .contact-me,
+nav > .resume,
+nav > .portfolio,
+.navwelcome,
+.footer {
+  background-color: #3d3d3d;
+  box-shadow: 0.25rem 0.25rem #ff85bc;
+  padding: 10px;
+}
 .nav {
   margin: 1rem;
 }
@@ -185,8 +197,20 @@ a {
   padding: 40px;
   text-align: center;
 }
-
-
+.short-info,
+.oni,
+#four > *,
+#five > *,
+#six > *,
+#nine > *,
+#ten > *,
+#thirteen > *,
+#fourteen > *,
+#fifteen > *,
+#sixteen > *,
+#seventeen > * {
+  color: #cc6a96;
+}
 
 @media (max-width: 960px) {
   body {
