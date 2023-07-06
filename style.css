@@ -1,0 +1,305 @@
+body {
+  background-color: #141414;
+}
+.img-bg {
+  content: "";
+  background-image: url(./assets/CYBER\ lightpink.png);
+  background-size: 720px;
+  background-repeat: repeat-x;
+  background-position-x: center;
+  background-position-y: 3rem;
+  position: absolute;
+
+  opacity: 0.3;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 1.5rem;
+}
+#container1 {
+  grid-template-rows: repeat(4, 1fr);
+}
+#container2 {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+#container3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+#zero {
+  grid-area: 1/2/3/3;
+  justify-self: center;
+  align-self: center;
+}
+#one {
+  grid-area: 1/1/3/2;
+  font-size: 36pt;
+  justify-self: center;
+  align-self: center;
+  margin: 3rem;
+}
+
+#two {
+  grid-area: 1/3/3/4;
+  justify-self: center;
+  align-self: center;
+}
+#three {
+  grid-area: 1/1/2/4;
+}
+#four {
+  grid-area: 2/1/3/2;
+  margin: 3rem;
+  justify-self: center;
+  align-self: center;
+}
+#five {
+  grid-area: 2/2/3/3;
+  margin: 3rem;
+  justify-self: center;
+  align-self: center;
+}
+#six {
+  grid-area: 2/3/3/3;
+  margin: 3rem;
+  justify-self: center;
+  align-self: center;
+}
+#seven {
+  grid-area: 3/1/4/4;
+}
+#eight {
+  grid-area: 1/1/2/3;
+}
+#nine {
+  grid-area: 2/1/3/2;
+  margin: 3rem;
+  justify-self: center;
+  align-self: center;
+}
+#ten {
+  grid-area: 2/2/3/3;
+  margin: 3rem;
+  justify-self: center;
+  align-self: center;
+}
+#eleven {
+  grid-area: 3/1/3/3;
+}
+#twelve {
+  grid-area: 1/1/2/4;
+}
+#thirteen {
+  grid-area: 2/1/3/2;
+  margin: 3rem;
+  align-self: center;
+}
+#fourteen {
+  grid-area: 2/2/3/3;
+  margin: 3rem;
+  align-self: center;
+}
+#fifteen {
+  grid-area: 2/3/3/4;
+  margin: 3rem;
+  align-self: center;
+}
+#sixteen {
+  grid-area: 3/1/4/3;
+  margin: 3rem;
+  justify-self: center;
+  align-self: center;
+}
+#seventeen {
+  grid-area: 3/2/4/4;
+  margin: 4rem;
+  justify-self: center;
+  align-self: center;
+}
+#eighteen {
+  grid-area: 5/1/6/4;
+}
+
+#nav2,
+#nav3 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  letter-spacing: 15px;
+  font-size: 66pt;
+}
+h2 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #ff85bc;
+}
+footer {
+  color: #ff85bc;
+}
+.text,
+.nav,
+.welcome,
+.resume,
+.portfolio,
+.contact-me,
+.about-me {
+  font-family: "DotGothic16", sans-serif;
+  color: #ffd6e8;
+  font-size: 24pt;
+}
+.welcome,
+.oni,
+.header,
+.resume,
+.navwelcome,
+.portfolio,
+.contact-me,
+.about-me {
+  color: #ffdbeb;
+  text-align: center;
+}
+.text,
+.nav {
+  background-color: #3d3d3d;
+  box-shadow: 0.25rem 0.25rem;
+  padding: 10px;
+}
+nav > .about-me,
+nav > .contact-me,
+nav > .resume,
+nav > .portfolio,
+.navwelcome,
+.footer {
+  background-color: #3d3d3d;
+  box-shadow: 0.25rem 0.25rem #ff85bc;
+  padding: 10px;
+}
+.nav {
+  margin: 1rem;
+}
+.twitter,
+.github,
+.stackoverflow {
+  padding: 40px;
+  text-align: center;
+}
+.short-info,
+.oni,
+#four > *,
+#five > *,
+#six > *,
+#nine > *,
+#ten > *,
+#thirteen > *,
+#fourteen > *,
+#fifteen > *,
+#sixteen > *,
+#seventeen > * {
+  color: #cc6a96;
+}
+
+@media (max-width: 960px) {
+  body {
+    height: 100%;
+    background-color: #141414;
+  }
+  .img-bg {
+    content: "";
+    background-image: url(./assets/CYBER\ lightpink.png);
+    background-repeat: repeat-y;
+    background-position-y: center;
+    background-size: 720px;
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  #bg {
+    height: 115vh;
+    background-size: contain;
+  }
+  #bg1,
+  #bg2 {
+    height: 200vh;
+    background-size: contain;
+  }
+  #bg3 {
+    height: 150vh;
+    background-size: contain;
+  }
+  #container1 {
+    height: 175%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  #container2 {
+    height: 175%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  #container3 {
+    height: 190%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  nav > .nav {
+    flex: 1 1 auto;
+  }
+
+  #zero,
+  #one,
+  #two,
+  #three,
+  #four,
+  #five,
+  #six,
+  #seven,
+  #eight,
+  #nine,
+  #ten,
+  #eleven,
+  #twelve,
+  #thirteen,
+  #fourteen,
+  #fifteen,
+  #sixteen,
+  #seventeen,
+  #eighteen {
+    margin: auto;
+  }
+}
